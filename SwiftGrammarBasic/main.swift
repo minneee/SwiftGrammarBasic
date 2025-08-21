@@ -56,7 +56,7 @@ introducing.append(Dog(name: "보리"))
 
 for item in introducing {
   print(item.introduce())
-  
+
   if let robot = item as? Robot {
     robot.batteryCharge()
   } else if let cat = item as? Cat {
@@ -65,3 +65,9 @@ for item in introducing {
     dog.walk()
   }
 }
+
+//MARK: - 필수 문제 5 (DeliveryService)
+checkDeliveryStatus(for: "서울시", status: .inTransit(daysRemaining: 5))
+checkDeliveryStatus(for: "", status: .inTransit(daysRemaining: 1))
+checkDeliveryStatus(for: "서울시", status: .error)
+checkDeliveryStatus(for: "서울시", status: .notStarted)
