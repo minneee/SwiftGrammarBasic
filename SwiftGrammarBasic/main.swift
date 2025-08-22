@@ -42,3 +42,4 @@ print(functionChallenge.c(array: [1, 2, 3, 4, 5]))
 print(functionChallenge.c(array: ["가", "나", "다", "라", "마"]))
 // 4
 print(functionChallenge.d(array: [1, 3, 5, 7, 9]))
+
