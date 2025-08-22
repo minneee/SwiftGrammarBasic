@@ -49,10 +49,12 @@ class FunctionChallenge {
   func d<T: Numeric>(array: [T]) -> [T] {
     var result: [T] = []
 
-    for element in array {
-      result.append(element * 2)
+    for (index, element) in array.enumerated() {
+      if index % 2 == 0 {
+        result.append(element)
+      }
     }
-    
+
     return result
   }
 }
