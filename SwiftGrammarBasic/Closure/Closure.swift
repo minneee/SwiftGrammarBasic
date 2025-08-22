@@ -16,4 +16,3 @@ class Closure {
     print(result)
   }
 }
-
