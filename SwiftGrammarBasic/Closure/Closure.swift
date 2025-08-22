@@ -15,3 +15,5 @@ class Closure {
     let result = operation(x, y)
     print(result)
   }
+}
+

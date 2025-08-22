@@ -25,6 +25,7 @@ print(higherOrderFunction.mapResult)
 // 2
 print(higherOrderFunction.stringEvenNumbers)
 // 3
+
 let myMapResult = higherOrderFunction.myMap([1, 2, 3, 4, 5]) {
   String($0)
 }
@@ -42,4 +43,5 @@ print(functionChallenge.c(array: [1, 2, 3, 4, 5]))
 print(functionChallenge.c(array: ["가", "나", "다", "라", "마"]))
 // 4
 print(functionChallenge.d(array: [1, 3, 5, 7, 9]))
+
 
