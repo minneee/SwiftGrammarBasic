@@ -1,21 +1,15 @@
 //
-//  CarInheritance.swift
+//  Car.swift
 //  SwiftGrammarBasic
 //
-//  Created by 김민희 on 8/21/25.
+//  Created by 김민희 on 8/22/25.
 //
-
-enum Engine {
-  case gasoline
-  case electricEngine
-  case HydrogenEngine
-}
 
 class Car {
   private var brand: String
   private var model: String
   private var year: String
-  fileprivate var engine: Engine
+  internal var engine: Engine
 
   init(brand: String, model: String, year: String, engine: Engine) {
     self.brand = brand
@@ -37,36 +31,6 @@ class Car {
   }
 }
 
-final class ElectricCar: Car {
-  public init(brand: String, model: String, year: String) {
-    let engine: Engine = .electricEngine
-    super.init(brand: brand, model: model, year: year, engine: engine)
-  }
-
-  override func driving() {
-    print("전기 자동차 주행중")
-  }
-
-  override func refuel() {
-    print("전기 자동차 배터리 충전")
-  }
-}
-
-final class HybridCar: Car {
-  override init(brand: String, model: String, year: String, engine: Engine) {
-    super.init(brand: brand, model: model, year: year, engine: engine)
-  }
-
-  override func refuel() {
-    super.refuel()
-    print("\(engine) 공급")
-  }
-
-  func switchEngine(to engine: Engine) {
-    self.engine = engine
-    print("엔진을 \(engine)으로 바꿈")
-  }
-}
 /*
  프로토콜을 사용하면 채택한 곳에서 무조건 구현해야하고,
  상속을 사용하면 필수적으로 구현하지 않아도 부모 클래스에서 구현한 내용을 그대로 사용할 수 있다.
