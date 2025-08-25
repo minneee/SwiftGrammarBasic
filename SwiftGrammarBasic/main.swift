@@ -112,3 +112,11 @@ let electricCar = ElectricCar(brand: "tesla", model: "Model 3", year: "2020")
 electricCar.driving()
 electricCar.refuel()
 electricCar.stop()
+
+//MARK: - 도전 문제 2 (SortableBox)
+print("🔍 도전 문제 2 (SortableBox)")
+var sortableBox = SortableBox(items: [423, 2, 65, 4, 2234, 63])
+print(sortableBox.items)
+sortableBox.sortItems()
+print(sortableBox.items)
+
