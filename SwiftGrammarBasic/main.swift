@@ -93,7 +93,7 @@ print(sortableBox.items)
 sortableBox.sortItems()
 print(sortableBox.items)
 
-MARK: - 도전 문제 4 (RetainCycle)
+//MARK: - 도전 문제 4 (RetainCycle)
 print("🔍 도전 문제 4 (RetainCycle)")
 var a: A? = A()
 var b: B? = B()
