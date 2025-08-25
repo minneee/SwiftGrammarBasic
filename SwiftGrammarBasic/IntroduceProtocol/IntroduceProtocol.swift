@@ -11,6 +11,13 @@ protocol Introducible {
   func introduce() -> String
 }
 
+//도전 문제
+extension Introducible {
+  func introduce() -> String {
+    return "안녕하세요, 저는 \(name)입니다"
+  }
+}
+
 struct Robot: Introducible {
   var name: String {
     didSet {
@@ -34,9 +41,11 @@ struct Robot: Introducible {
 struct Cat: Introducible {
   var name: String
 
-  func introduce() -> String {
-    return "안녕하세요, 저는 Cat \(name)입니다"
-  }
+//  필수 문제는 주석 제거, 도전 문제는 주석 추가
+//  func introduce() -> String {
+//    return "안녕하세요, 저는 Cat \(name)입니다"
+//  }
+
 
   func meow() {
     print("\(name): 야옹")
@@ -46,9 +55,11 @@ struct Cat: Introducible {
 struct Dog: Introducible {
   var name: String
 
-  func introduce() -> String {
-    return "안녕하세요, 저는 Dog \(name)입니다"
-  }
+//  필수 문제는 주석 제거, 도전 문제는 주석 추가
+//  func introduce() -> String {
+//    return "안녕하세요, 저는 Dog \(name)입니다"
+//  }
+
 
   func walk() {
     print("\(name): 산책중입니다")
