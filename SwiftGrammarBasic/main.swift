@@ -94,7 +94,21 @@ for item in introducing {
 }
 
 //MARK: - 필수 문제 5 (DeliveryService)
+print("💡 필수 문제 5 (DeliveryService)")
 checkDeliveryStatus(for: "서울시", status: .inTransit(daysRemaining: 5))
 checkDeliveryStatus(for: "", status: .inTransit(daysRemaining: 1))
 checkDeliveryStatus(for: "서울시", status: .error)
 checkDeliveryStatus(for: "서울시", status: .notStarted)
+
+//MARK: - 도전 문제 1 (CarInheritance)
+print("🔍 도전 문제 1 (CarInheritance)")
+let hybridCar = HybridCar(brand: "현대", model: "그랜저", year: "2025", engine: .HydrogenEngine)
+hybridCar.driving()
+hybridCar.stop()
+hybridCar.refuel()
+hybridCar.switchEngine(to: .electricEngine)
+print("======")
+let electricCar = ElectricCar(brand: "tesla", model: "Model 3", year: "2020")
+electricCar.driving()
+electricCar.refuel()
+electricCar.stop()

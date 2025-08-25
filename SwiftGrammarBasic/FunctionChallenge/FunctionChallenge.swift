@@ -54,7 +54,7 @@ class FunctionChallenge {
         result.append(element)
       }
     }
-
+    
     return result
   }
 }
