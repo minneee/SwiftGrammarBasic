@@ -46,7 +46,6 @@ struct Cat: Introducible {
 //    return "안녕하세요, 저는 Cat \(name)입니다"
 //  }
 
-
   func meow() {
     print("\(name): 야옹")
   }
@@ -59,7 +58,6 @@ struct Dog: Introducible {
 //  func introduce() -> String {
 //    return "안녕하세요, 저는 Dog \(name)입니다"
 //  }
-
 
   func walk() {
     print("\(name): 산책중입니다")
