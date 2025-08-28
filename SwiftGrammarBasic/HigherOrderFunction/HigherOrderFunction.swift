@@ -19,11 +19,11 @@ class HigherOrderFunction {
   }
 
   // 3
-  func myMap(_ numbers: [Int], _: (Int) -> String) -> [String] {
+  func myMap(_ numbers: [Int], transform: (Int) -> String) -> [String] {
     var result: [String] = []
 
     for number in numbers {
-      result.append(String(number))
+      result.append(transform(number))
     }
 
     return result
